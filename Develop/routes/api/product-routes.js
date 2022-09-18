@@ -74,6 +74,7 @@ router.post('/', (req, res) => {
         });
         return ProductTag.bulkCreate(productTagIdArr);
       }
+
       // if no product tags, just respond
       res.status(200).json(product);
     })
@@ -135,7 +136,7 @@ router.delete('/:id', (req, res) => {
       res.status(404).json({ message: 'No product found with this id' });
       return;
     }
-    res.json(dbPostData);
+      res.json( "Record deleted, status code: " + dbPostData);
   })
   .catch(err => {
     console.log(err);
