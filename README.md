@@ -1,6 +1,6 @@
 # ecommerce
 
-Instructions: Install: dotenv, mysql2 and sequelize
+Instructions: Install: dotenv, mysql2 and sequelize, express
 
 Link to repo: https://github.com/tarajevans/ecommerce
 
